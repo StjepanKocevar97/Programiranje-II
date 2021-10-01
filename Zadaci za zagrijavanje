@@ -1,0 +1,10 @@
+int main()                                            // "int main()" je glavna funkcija i izvođenje programa počinje s njom
+{
+      int Broj;                                       // deklariranje varijable broj, vrijednost int-a je cijeli broj, količina memorije je 1 Byte
+      printf("Ucitati Broj : ");                      // ime varijable Broj čija se vrijednost učitava
+      scanf("%d",&broj);                              // učitavanje cijelobrojne vrijednosti varijable Broj sa tipkovnice
+      printf("Ucitani Broj je %d",Broj);              // ispis vrijednosti varijable Broj
+      
+      return 0;                                       // naredba "return 0" nam govori da će glavna (main) funkcija po završetku izvođenja vratiti znamenku 0 ukoliko nije došlo do pogreške u izvođenju programa
+      
+}      
