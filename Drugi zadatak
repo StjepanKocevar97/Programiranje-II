@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+    int a, b; 
+      
+    printf("1. broj: ");       
+    scanf("%d", &a);   
+    printf("2. broj: ");       
+    scanf("%d", &b);  
+      
+    printf("broj2 = %d\n", b);  
+    printf("broj1 = %d     ", a); 
+    return 0;
+}
+
+/*
+Naredba scanf() služi za učitavanje vrijednosti cijelih brojeva a i b, dok nareba printf () služi za ispis vrijednosti brojeva a i b.
+Sadržaj pod dvostrukim navodnicima ispisuje se na ekran bez izmjene."%d" znači da se radi o cijelobronjim vrijednostima čija je memorija 1 Byte,a operator "&" koristimo za pristup adresama brojeva a i b. \n označava prelazak u novi red  
+*/
