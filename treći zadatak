@@ -1,0 +1,30 @@
+/*
+Omoguciti korisniku unos 5 cijelih brojeva. Unos brojeva mora biti u intervalu od <1, 8].
+izracunati i na ekran ispisati sumu unesenih brojeva.
+*/
+		
+#include<stdio.h>
+
+int main()
+{
+	int a;
+	int suma = 0;
+	int i;
+	for (i = 0; i < 5; i++) 
+  {
+		do
+  {
+			scanf("%d", &a);
+	} 
+    while((a > 1 && a<= 8));
+		suma = suma + a;
+	}
+	printf("%d", suma );
+	return 0;
+}
+
+/*
+U ovom programu računamo sumu cijelih brojeva koji moraju biti unutar zadanog intervala od 1 do 8. Gdje se 1 ne uključuje zbog zagrade "<", a 8 uključuje zbog zagrade
+"]". Pošto moramo računat sa cijelim brojevima koristimo naredbu int().Do while petljom osiguravamo da će se učitat brojevi iz zadanog intervala. kad imamo samo 5 unosa
+cijelih brojeva ,te nam je a jedina varijabla, njihovu sumu računamo kao suma = suma + a;.U Printf koristimo %d jer se radi o cijelim brojevima čija je memorija 4 B.
+*/
