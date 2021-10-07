@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+int main(void) 
+{
+	float X;
+	float Y;
+	float Z;
+	scanf("%f%f", &X, &Y);
+	if (X > Y) 
+  {
+		Z = X;
+	}
+	else 
+  {
+		Z = Y;
+	}
+	printf("%f", Y);
+	
+  return 0;
+}
+
+*/
+U ovom zadatku korisniku dajemo da unese 2 realna broja. Pomoću if() petlje provjeravamo uvjet da li je X veći od Y,ako je, onda realni broj X spremamo u varijablu Z.
+Ukoliko nije veći,tj. Nije istinit,pomoću else() petlje spremamo novu vrijednost realnog broja Y u varijablu C.
+*/
