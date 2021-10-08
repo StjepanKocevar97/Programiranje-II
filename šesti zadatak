@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include<stdlib.h>
+
+/*Izracunaj volumen stosca tako da korisnik unosi velicine radijusa i visine. Ispisi koji je stozac veci te njegovu vrijednost*/
+
+int main() 
+{
+	float R1,h1;
+	float R2,h2;
+	float Volumen1 = 0;
+	float Volumen2 = 0;
+	float pi = 3.141593;
+	printf("Unesite radijus prvog stosca:");
+	scanf("%f", &R1);
+  printf("Unesite visinu prvog stosca:");
+  scanf("%f", &h1);
+	printf("Unesite radijus drugog stosca:");
+	scanf("%f", &R2);
+  printf("Unesite visinu drugog stosca:");
+  scanf("%f", &h2);
+	Volumen1 = (1.0 / 3.0) * (R1 * R1) * pi * h1;
+	printf("\nVelicina prvog stosca je %f", Volumen1);
+	Volumen2 = (1.0 / 3.0) * (R2 * R2) * pi * h2;
+	printf("\nVelicina drugog stosca je %f", Volumen2);
+	if (Volumen1 > Volumen2) 
+  {
+		printf("\nPrvi stozac je veci od drugog");
+	}
+  if (Volumen1 < Volumen2) 
+  {
+		printf("\nPrvi stozac je manji od drugog");
+	}
+  if (Volumen1 == Volumen2)
+  {
+		printf("\nError");
+	}
+	return 0;
+
+}
+
+/*
+U ovom programu koirsnik unosi dva radijusa i dvije visine kako bi izracunao volumen stosca. Varijable Volumen1 i Volumen2 nam sluze iskljucivo kao formule 
+za racunanje volumena stosca. 1/3 je napisana kao 1.0/3.0 jer radimo sa float odnosno realnim vrijednostima i rezultat koji ocekujemo u programu takoder je realan.
+Kad izracunamo volumen prvog stosca i drugog stosca, spremimo ih u varijabele Volumen1 odnosno Volumen2. Za izracunavanje koja je kugla veca,a koja je manja,
+koristimo 3 if naredbe u kojima postavljamo uvjete za stosce, npr.(Volumen1>Volumen2). Na kraju program ispisuje koji je stozac veći,a koji je manji.
+Ukoliko su stosci jednaki, Program ispisuje Error
+*/
+
+
+
