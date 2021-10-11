@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <math.h>
+
+/* U programu omogućite unos stranice jednakostraničnog trokuta te izračunati opseg i površinu tog trokuta */
+
+void main()
+{
+	float a;
+
+	printf("\nUčitaj stranicu a trokuta: ");
+	scanf("%f", &a);
+	printf("\nOpseg trokuta je : %.3f", 3*a);
+	printf("\nPovršina trokuta je : %.3f", a*a*sqrt(3.0)/4.0);
+
+	return 0;
+}
+
+/* U ovom zadatku unosimo realnu varijablu a, koja čini stranicu jednakostraničnog trokuta. U prvom Printf() dodajemo realan broj varijabli a.
+Kad smo dodali realnu vrijednost varijabli a, izračunamo i ispišemo Opseg i površinu trokuta. ".3" u "%.3f" Nam govori da kad ispisujemo realnu
+vrijednost rezultata opsega i površine,rezultat zaokružimo na 3 znamenke koje će se pojaviti nakon decimalne točke. 
+Npr.(ako nam je a=3.5,tada je Opseg je 10.5 ,a površina 5.304 ( a ne 5.304405598) 
+*/
