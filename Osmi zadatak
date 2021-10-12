@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <math.h>
+
+/* Izracunaj dijagonalu kvadrata stranice a */
+
+int main()
+{
+    float a, d;                                             
+     
+    printf("Ucitaj duzinu stranice kvadrata: ");              
+    scanf("%f",&a);                                        
+      
+    d = a * sqrt(2);                                         
+    printf("Duzina dijagonale kvadrata iznosi: %f", d);    
+     
+    return 0;
+}
+
+/* 
+Program ucitava realnu vrijednost stranice a i računa njezinu dijagonalu kvadrata. U programu prvo deklariramo varijable a i d, gdje je 
+a stranica kvadrata,a d dijagonala. Zatim ucitavamo vrijednost stranice kvadrata sa tipkovnice te racunamo njezinu dijagonalu umnoškom stranice 
+a sa scrt(2) koji nam računa korijen broja 2 i nalazi se u biblioteci math.h. Nakon što izračunamo koliko nam je dijagonala, ispisujemo je na ekranu pomocu
+funkcije printf()
+*/
