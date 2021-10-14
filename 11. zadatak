@@ -1,0 +1,64 @@
+#include <stdio.h>
+
+/* Napravite program u kojem morate unijeti cjelobrojne elemenate u matricu velicine 5x5, zatim ih zbrojit i na kraju ispisat njihov zbroj u obliku matrice */
+
+int main()
+{
+  int G[5][5];
+  int H[5][5];
+  int J[5][5];
+  
+  int i, j;
+  
+  printf("Unesite elemente matrice G: \n");
+  
+  for (i = 0; i < 5; i++)
+  {
+    for (j = 0; j < 5; j++)
+        
+        {
+            scanf("%d", &G[i][j]);
+        }
+  }
+  
+  printf("\n Unesite elemente matrice H: \n");
+  
+  for (i = 0; i < 5; i++)
+  {
+      for (j = 0; j < 5; j++)
+       {
+            scanf("%d", &H[i][j]);
+        }
+  }
+  
+  for (i = 0; i < 5; i++)
+  {
+      for (j = 0; j < 5; j++)
+        {
+            J[i][j] = G[i][j] + H[i][j];
+        }
+  }
+  
+  printf("\n Zbroj matrica = \n");
+  
+  for (i = 0; i < 5; i++)
+  {
+      for (j = 0; j < 5; j++)
+        {
+            printf("%d ", J[i][j]);
+        }
+        
+        printf("\n");
+  }
+ 
+ return 0;
+}
+
+/*
+Prvo smo napravili deklaraciju matrica reda 5x5, odnosno matrice G[5][5],H[5][5],J[5][5] te varijable i,j. Išli smo redom:
+Prvo Matricu G,pa matricu H i na kraju J koja ce posluziti kao zbroj matrica G i H. Unosimo ih funkcijom scanf() i dvije for
+petlje preko kojih prolazimo kroz svako polje matrica.Sumu dobijemo tako što prolazimo kroz matrice G i H te sumu zapisujemo tako sto
+ju spremimo u varijablu J te kako bi nam ispis radio moramo prolaziti for petljama te ispisujemo spremljene vrijednosti iz matrice J.
+Elementi matrice G i H su cijeli brojevi,pa su tako i elementi zbrajanja matrice J također cijeli brojevi. 
+Posto su matrice G i H reda 5x5, rezultat zbroja elemenata matrice J također mora biti reda 5x5. 
+*/
