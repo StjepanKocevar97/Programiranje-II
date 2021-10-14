@@ -1,0 +1,33 @@
+#include <stdio.h>
+ 
+ /* Napiši program sa funkcijom pomoću koje ćeš izračunati dvostruku vrijednost učitanog cijelog broja */
+
+int suma(int g) 
+{
+    int suma;
+ 
+    suma = g + g;   
+ 
+    return suma;   
+   
+}
+int main ()
+{
+    printf("Dvostruka vrijednost broja\n");
+    int broj1, s;
+ 
+    printf("Broj: ");
+    scanf("%d",&broj1);
+ 
+    s = suma(broj1);
+ 
+    printf("%d + %d = %d ", broj1, broj1, s);
+ 
+    return 0;
+}
+
+/*
+Prvo u početku deklariramo sumu prije glavne funckije int main() te nam je "suma= g + g" dvostruka vrijednost cijelog broja,
+a "return suma" je izlazna vrijednost funckije. U int main() su nam je broj1 i s ulazne vrijednosti, "suma = suma(broj1); je poziv funkcije suma, 
+a "printf("%d + %d = %d ", broj1, broj1, s);" služi za ispis vrijednosti ulaznih i izlaznih varijabli
+*/
