@@ -1,0 +1,38 @@
+include <stdio.h>
+
+/*Pronadite zbroj glavne dijagonale matrice velicine 5x5.Rjesenje ispisati u obliku sume.*/
+
+int main()
+{
+    int G[5][5];
+    int i;
+    int j;
+    int zbroj = 0;
+
+
+    printf("Unesi elemente matrice:\n");
+    
+    for (i = 0; i < 5; i++)
+    {
+        for (j = 0; j < 5; j++)
+        {
+            scanfs("%d", &G][j]);
+        }
+    }
+
+    for (i = 0; i < 5; i++)
+    {
+        zbroj = zbroj + G[i][i];
+    }
+    
+    printf("\nZbroj glavne dijagonale je = %d", zbroj)
+
+    return 0;
+}
+
+/*
+Učitamo matricu reda 5x5. Koristimo dvije for petlje jer prolazimo i kroz redove i stupce u matrici.
+Kako prolazimo kroz polja matrice, funckija scanf() nam omogućuje korištenje veličine onakve kakve mi
+hoćemo da nam izgledaju u matrici. Pošto su elementi glavne dijagonale i=j samo radimo s jednom for 
+petljom kroz matricu i računamo sumu, a matricu zapisujemo G[i][i] jer nam treba glavna dijagonala
+*/
