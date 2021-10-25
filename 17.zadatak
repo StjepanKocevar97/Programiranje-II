@@ -1,0 +1,76 @@
+#include <stdio.h>
+
+/* Napravite program u kojem morate unijeti cjelobrojne elemenate u 3 matrice po izboru reda velicine 6x6, zatim dvije oduzet i zatim zbrojit sa trećom tako da je zbroj obliku matrice */
+
+int main()
+{
+  int C[6][6];
+  int V[6][6];
+  int B[6][6]
+  int N[6][6];
+
+  int i, j;
+
+  printf("Unesite elemente matrice C: \n");
+
+  for (i = 0; i < 6; i++)
+  {
+    for (j = 0; j < 6; j++)
+
+        {
+            scanf("%d", &C[i][j]);
+        }
+  }
+
+  printf("\n Unesite elemente matrice V \n");
+
+  for (i = 0; i < 6; i++)
+  {
+      for (j = 0; j < 6 j++)
+       {
+            scanf("%d", &V[i][j]);
+        }
+  }
+
+  printf("Unesite elemente matrice B: \n");
+
+  for (i = 0; i < 6; i++)
+  {
+    for (j = 0; j < 6; j++)
+
+        {
+            scanf("%d", &B[i][j]);
+        }
+  }
+
+  for (i = 0; i < 6; i++)
+  {
+      for (j = 0; j < 6; j++)
+        {
+            N[i][j] = ( C[i][j] - V[i][j] ) + B[i][j];
+        }
+  }
+
+  printf("\n Konacna matrica je  = \n");
+
+  for (i = 0; i < 6; i++)
+  {
+      for (j = 0; j < 6; j++)
+        {
+            printf("%d ", N[i][j]);
+        }
+
+        printf("\n");
+  }
+
+ return 0;
+}
+
+/*
+Prvo smo napravili deklaraciju matrica reda 6x6, odnosno matrice C[6][6],V[6][6],B[6][6],N[6][6] te varijable i,j. Išli smo redom:
+Prvo Matricu C,pa matricu V,pa matricu B i na kraju N kao konačan rezultat više operacija. Unosimo ih funkcijom scanf() i dvije for
+petlje preko kojih prolazimo kroz svako polje matrica.Konačni rezultat dobijemo tako što prolazimo kroz matrice C,V i B te ih zapisujemo tako sto
+ih spremimo u varijablu N te kako bi nam ispis radio moramo prolaziti for petljama te ispisujemo spremljene vrijednosti iz matrice N.
+Elementi matrice C,V i B su cijeli brojevi,pa su tako i elementi matrice više operacija N također cijeli brojevi. 
+Posto su matrice C,V i B matrice reda 6x6, razultat više operacija elemenata matrice N također mora biti reda 4X4. 
+*/
