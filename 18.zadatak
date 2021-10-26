@@ -1,0 +1,36 @@
+#include<stdio.h>
+
+/*Unesi elemenate matrice dimenzija 5x5. 
+Izracunaj i na ekran ispisi sumu elemenata glavne dijagonale i umnozak elemenata sporedne dijagonale.
+*/
+
+int main() 
+{
+	int i;
+	int j;
+	int suma = 0;
+	int umnozak = 1;
+	int A[5][5];
+
+	for (i = 0; i < 5; i++)
+      for(j = 0; j < 5; j++)
+          scanf("%d", &A[i][j]);
+	
+  suma = 0;
+	for (i = 0; i < 3; i++) 
+		suma = suma + A[i][i];
+
+	umnozak = 1;
+	for (i = 0; i < 3; i++) 
+		   umnozak = umnozak * A[i][2 - i];
+
+	printf("Zbroj elemenata glavne dijagonale je %d, a produkt sporedne je %d\n", suma, umnozak);
+
+	return 0;
+}
+/*
+Prvo deklariramo sumu i umnozak, nakon toga posto se ne smije mnoziti s 0, umnozak postavljamo na vrijednost 1 kao pocetni
+uvjet. For petljama prolazimo kroz matrice te unosimo proizvoljne elemente unutar matrice reda 5x5. Sumu na glavnoj
+dijagonali racunamo kao suma = suma + A[i][i] jer za glavnu dijagonalu vrijedi da je i=j. Umnozak za sporednu dijagonalu
+racunamo kao umnozak = umnozak * A[i][broj elementa - 1 - i].U nasem slucaju [2-i] te na kraju ispisujemo rezultat na ekranu
+*/
