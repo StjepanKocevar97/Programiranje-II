@@ -1,0 +1,19 @@
+#include<stdio.h>
+
+/* Deklariraj i inicijaliziraj polje znakova kao string te ga zatim ispisi 20 puta na ekran*/
+
+int main() 
+{
+	char s[] = "Programiranje je najbolje\n";
+	int i;
+	
+  for (i = 1; i <= 20; i++)
+		printf("%s", s);
+	return 0;
+}
+
+/*
+U ovom zadatku cemo koristiti stringove. Stringovi ce nam koristiti slicno kao i polja, samo je razlika u tome da stringovi koriste znakove,
+odnosno slova, a polja brojeve.Napravili smo string koji u sebi sadrzi recenicu ("Programiranje je najbolje"). For petljom cemo proci kroz string
+te ispisujemo recenicu programiranje je najbolje 20 puta na ekran.
+*/
