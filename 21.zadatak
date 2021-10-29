@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+/* Deklariraj i inicijalizraj polje znakova te napisi random recenicu i ispis svakog drugog znaka pomocu stringa */
+
+int main() 
+{
+	char string[] = "otorinolaringologija";
+	int j;
+	
+  for (j = 0; string[j] != '\0'; j++)
+		
+    if ((j + 1) % 2 == 0)
+			   putchar(string[j]);
+	
+  return 0;
+}
+
+/*
+Stringovi nam služe za isto kao i polja, samo sto u poljima se koriste brojevi, a u stringovima slova ili znakovi. 
+Napisali smo string koji sadrzi recenicu otorinolaringologija i nas zadatak je proci kroz polje znakova, te prolazak sve
+do pojave null znaka (string[j] != '\0'), te funkcijom putchar(putchar(string[j])) ispisujemo nas string.
+*/ 
+
+ 
