@@ -1,0 +1,33 @@
+#include<stdio.h>
+
+/*
+Treba dozvoliti unos cijelog broja iz niza intervala  [160,6666>. Zatim za svaki broj od 1 do n, 
+u posebnom retku, Ispiši na ekran toliko minusa (-).
+*/
+
+int main() 
+{
+	int y = 0;
+	int i;
+	int j;
+	do 
+  {
+		printf("Unesi broj iz intervala [160,6666>: ");
+		scanfs("%d", &a);
+	} 
+  while(!(y>=160 &&  y<6666));
+
+	for ( i = 1; i <= y; i++) 
+  {
+		for  (j = 1; j < i; j++) 
+    {
+			printf("-");
+		}
+		printf("\n");
+	}
+	return 0;
+}
+/*
+U ovom programu omogucujemo unos brojeva iz zadanog intervala. Zbog ogranicenja intervala, koristimo do while petlju. 
+Unosimo neki broj iz tog intervala sve do onog broja u svakom redu pomocu kojeg iskomentiramo broj - kako nam je zadano.
+*/ 
