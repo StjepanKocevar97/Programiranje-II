@@ -1,0 +1,29 @@
+#include<stdio.h>
+/* Unesi dva realna broja, tako da drugi mora biti strogo veci od prvog te ispisati sve preostale brojeve izmedu njih */
+
+int main() 
+{
+	int x = 0;
+	int y = 0;
+	int i;
+	do 
+  {
+		printf("Unesi dva realna broja i uvjet da je drugi veci od prvog: ");
+		scanf("%f %f", &x, &y);
+		printf("\n");
+	}
+  while (!(x > y));
+
+	for (i = x + 1; i < y; i++)
+  {
+		printf("%f ", i);
+	}
+	printf("\n");
+	return 0;
+}
+
+/* Prvo unosimo dva realna broja sa tipkovnice s uz uvjet da drugi mora biti veci od prvog. Vrijednost realnih brojeva je
+na nuli iz razloga da nemaju nikakvu vrijednost. Pomocu funkcije scanf unosimo brojeve x i y i pomocu while petlje ogradimo unos
+manjeg i veceg broja. For petlja nam sluzi za prolazak kroz vrijednosti koje smo unesli te na ekran ih ispisujemo brojeve ako je 
+korisnik dobro unio brojeve, a u suprotnom pogram ne radi i izbacit ce ga van 
+*/
