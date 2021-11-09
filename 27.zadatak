@@ -1,0 +1,37 @@
+#include<stdio.h>
+
+/* Omoguci korisniku unos 20 cijelih brojeva iz intervala [-24,19] te negativne prebacite u pozitivne. Ispiši ih na ekran */
+
+int main()
+{
+
+	int z[20];
+	int j;
+
+for (j = 0; j < 20; j++) 
+{
+do 
+{
+			printf("Unesite %d broj: ", j + 1);
+			scanf("%d", &z[j]);
+}
+while (!(z[j]>=-24 && z[j]<=19));
+	}
+	for (j = 0; j < 10; j++) 
+  {
+		if (z[j] < 0) 
+  {
+			z[j] = -z[j];
+	}
+ printf("\n %d \n", z[j]);
+	}
+
+
+	return 0;
+}
+
+/*
+Pomocu for petlje omogucavamo unos 20 cijelih brojeva. While petljom ugradujemo zadani interval. Drugom for petljmom prolazimo kroz
+unesene brojeve te sve koju su negativni, pretvaramo ih u pozitivne(-1 postaje 1). Printf-om ispisemo sve brojeve nebitno dal su negativni 
+ili pozitivni, svi se ispisuju 
+*/
