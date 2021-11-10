@@ -1,0 +1,27 @@
+#include<stdio.h>
+#define max 30
+
+/* Omoguci korisniku unos polja velicine 30 i odredi sve indekse koji su parni te ih ispisi */
+
+int main()
+{
+	int c[max], j;
+
+	for (j = 0; j < max; j++)
+	{
+		scanf(" %d", &c[j]);
+	}
+
+	for (j = 0; j < max - 1; j++)
+	{
+		if (c[j]%2==0)
+		{
+			printf("Indeks %d je paran . \n", j);
+		}
+	}
+	return 0;
+}
+/*
+Napravimo prvo polje od 30 znakova, ali ovaj put cemo velicinu polja odmah definirati u zaglavlju. Prva for petlja omogucuju unos,a 
+drugom provjeravamo je li indeks paran(odnosno cjelobrojno dijeljiv sa 2,nema ostataka pri dijeljenju) te ako je ispisemo ga.
+*/ 
