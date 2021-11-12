@@ -1,0 +1,27 @@
+#include<stdio.h>
+#define max 20
+
+/* Omoguci korisniku unos polja velicine 20 i odredi sve indekse koji su dijeljivi sa 5 te ih ispisi */
+
+int main()
+{
+	int c[max], j;
+
+	for (j = 0; j < max; j++)
+	{
+		scanf(" %d", &c[j]);
+	}
+
+	for (j = 0; j < max - 1; j++)
+	{
+		if (c[j]%5==0)
+		{
+			printf("Indeks %d je dijeljiv sa 5 . \n", j);
+		}
+	}
+	return 0;
+}
+/*
+Napravimo prvo polje od 20 znakova, ali ovaj put cemo velicinu polja odmah definirati u zaglavlju. Prva for petlja omogucuju unos,a 
+drugom provjeravamo je li indeks dijeljiv sa 5 (ostataka pri cijelobrojnom dijeljenju mora biti 0) te ako je ispisemo ga.
+*/ 
