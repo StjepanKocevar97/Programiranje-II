@@ -1,0 +1,27 @@
+#include<stdio.h>
+
+/*Omoguci koirsniku unos stranica trokuta te izracunaj opseg jednakokračnog trokuta pomocu do while petlje tako da vrijedi pitagorin poučak. Rezultat ispisi na ekran.*/
+
+int main() 
+{
+	float d, j, k;
+	float opseg;
+
+	do 
+  {
+		printf("Unesite stranice d,j,k \n");
+		scanf("%f, %f, %f ", &d, &j, &k );
+	} 
+  while (k*k != d*d + j*j);
+
+
+	opseg = 2d + j ;
+	printf("Opseg: %f \n", opseg);
+	return 0;
+}
+
+/*
+Prvo unesemo sa tipkovnice realne vrijednosti stranica trouta d,j,k. Do while petljom zakljucujemo da nemamo nulu pri unosu, u 
+slučaju da bi unijeli nulu, program ne bi radio i while petljom ugradujemo da nema nule pri unosu. Opseg trokuta nam je vrlo poznat
+te na ekran ispisujemo rezultat koji dobijemo
+*/
