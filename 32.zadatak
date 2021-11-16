@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+/*
+Odredite velicine odabranih po zelji tipove podataka te im onda ispisite vrijednosti u byte.
+*/
+
+int main()
+{
+    int I;
+    char G;
+    short H;
+    float K;
+    long J;
+    double L;
+
+
+    printf("Velicina od int: %ld byte\n", sizeof(I));
+    printf("Velicina od char: %ld bytes\n", sizeof(G));
+
+    printf("Velicina od short: %ld bytes\n", sizeof(H));
+    printf("Velicina od float: %ld bytes\n", sizeof(K));
+
+    printf("Velicina od long: %ld bytes\n", sizeof(J));
+    printf("Velicina od double: %ld bytes\n", sizeof(L));
+
+
+
+    return 0;
+}
+
+/*
+Prvo deklariramo tipoove podataka po zelji redom koji zelimo i onda pomocu sizeof funkcije prizovemo svaku od funkcija
+te tako onda ispisemo velicinu odabranih tipova podataka.
+*/ 
