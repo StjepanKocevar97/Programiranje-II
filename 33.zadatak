@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+/*
+Omogucite ispis svih ASCII Vrijednosti na ekran(255 znakova)
+*/
+
+int main()
+{
+    int k;
+
+    for (k = 0; k <= 255; k++)
+    {
+        printf("vrijednost ASCII od  %c = %d\n", k, k);
+    }
+
+    return 0;
+}
+
+/*
+Ovaj zadatak nam pokazuje kako prvo printamo ASCII vrijednosti svih 255 znakova iz tablice. Pomocu for petlje svih 255 znakova
+stavimo da prolaze kroz imaginarno polje. Preko %c i %d izjednacimo da bismo dobili numericke vrijednosti svih 255 znaka i obratno.
+*/
