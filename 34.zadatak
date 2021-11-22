@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+/*
+Omoguci korisniku ispis engleske abecede na ekran i to samo Velika slova 
+*/
+
+int main()
+{
+    char A;
+
+    printf("Abeceda od A do Z: \n");
+    for (a = 'A'; a <= 'Z'; a++)
+    {
+        printf("%c\t", A);
+    }
+
+    return 0;
+}
+
+/*
+For petlja nam sluzi da nam slova idu od A do Z. U charu deklariramo slovo A, a u for petlji koristimo a umjesto i. Na kraju ispisemo abecedu.
+*/ 
