@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+/*
+Za svaki uneseni broj pomnozite ga s vrijednoscu od 2 do 12 te omogucite izradu tablice s tim brojevima
+*/
+
+int main()
+{
+    int k,Broj;
+
+    printf("Unesite zeljeni Broj: ");
+    scanf_s("%d", &Broj);
+
+    for (k = 2; i <= 12; i++)
+    {
+
+        printf("%d x %d = %d\n", Broj, k, (Broj * k));
+    }
+
+    return 0;
+}
+
+/*
+Prvo unosimo broj po zelji, te za svaki uneseni pomnozimo ga s vruhednosti od 2 do 12 tako da su oba ukljucena te na kraju izradimo tablicu od tih brojeva
+*/ 
