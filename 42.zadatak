@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+/*Unesite neki broj.Zatim izracunaj zbroj prve i zadnje znamenke te ispiste iz tipkovnice na ekran .*/
+
+int main()
+{
+
+    int dig, zbroj = 0, first, last;
+
+    printf("Unesite neki broj: ");
+    scanf_s("%d", &num);
+
+    last = dig % 10;
+
+    first = dig;
+
+    while (dig >= 10)
+    {
+        dig = dig / 10;
+    }
+    first = dig;
+
+    zbroj = first + last;
+
+    printf("Zbroj first i last  je: %d", zbroj);
+    return 0;
+}
+
+/*
+Prvo smo unijeli neki broj.Zbroju smo dodali vrijednost 0.%10 funkcijom izbijamo zadnju znamenku i spremamo ju u varijablu first.Ako unosimo neke vece
+brojeve moramo se osigurati i podijeliti ih s 10 da dobimo samo jednu znamenku te na kraju samo zbrojimo nase znamenke i ispisemo na ekran.
+*/
