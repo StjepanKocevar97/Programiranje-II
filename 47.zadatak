@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+/*Unesite neki zeljeni broj te nadite zadnju znamenku unesenog broja te ju zatim ispisite na ekran.*/
+
+int main()
+{
+    int numer;
+    int last;
+    printf("enter a number of your choice : ");
+    scanf("%d", &numer);
+
+    last = numer % 10;
+    printf("last digit is: %d\n", last);
+
+    return 0;
+}
+
+/* 
+Rjesenje je isto kao u proslim zadacima.
+*/ 
