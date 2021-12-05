@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+/*Omogucite korisniku unos realnog broja te ispisite unatrag sve brojeve od unesenog broja pa da nule.*/
+
+int main()
+{
+    int k;
+    int broj;
+
+
+    printf("Unesite neki broj: ");
+    scanf("%f", &broj);
+
+    for (k = broj; k >= 1; k--)
+    {
+        printf("%f\n", k);
+    }
+    return 0;
+}
+
+/*
+Prvo smo unijeli broj po zelji. "Obrnutom" for petljom dobivamo rjesenje odnosno samo dekrementiramo s k-- da nam ide od vrijednosti najvece prema onoj manjoj.
+*/ 
