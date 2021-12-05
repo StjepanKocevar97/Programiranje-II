@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+/*Unesite neki broj.Zatim izracunaj razliku prve i zadnje znamenke te ispiste iz tipkovnice na ekran .*/
+
+int main()
+{
+
+    int dig, int diff = 0, first, last;
+
+    printf("Unesite neki broj: ");
+    scanf("%d", &dig);
+
+    last = dig % 10;
+
+    first = dig;
+
+    while (dig >= 10)
+    {
+        dig = dig / 10;
+    }
+    first = dig;
+
+    diff = first - last;
+
+    printf("difference first i last is: %d", diff);
+    return 0;
+}
+
+/*
+Prvo smo unijeli neki broj.Razlici smo dodali vrijednost 0.%10 funkcijom izbijamo zadnju znamenku i spremamo ju u varijablu first.Ako unosimo neke vece
+brojeve moramo se osigurati i podijeliti ih s 10 da dobimo samo jednu znamenku te na kraju samo oduzmemo nase znamenke i ispisemo na ekran.
+*/
