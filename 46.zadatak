@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+/*
+Omogucite korisniku unos nekog broja po zelji te zatim ispisite prvu i zadnju znamenku tog broja.
+*/
+int main()
+{
+    int numer;
+    int first;
+    int last;
+    printf("Unesite neki broj : ");
+    scanf("%d", &numer);
+
+    last = numer % 10;
+    printf("Last digit is: %d\n", last);
+
+    while (numer >= 10)
+    {
+        numer = numer / 10;
+    }
+
+    printf("first digit is : %d\n", numer);
+    return 0;
+}
+/*
+Prvo smo unijeli zeljeni broj.%10 funckijom izbijamo zadnju znamenku, % je modulo nekog broja. While petljom osiguravamo
+da dobijemo prvu znamenku dijeljenjem naseg unesenog broja.
+*/ 
