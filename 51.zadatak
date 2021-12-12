@@ -1,0 +1,35 @@
+/* 
+Omoguci korisniku unos broja kojemu je suma kubova znamenki jednaka samom tom broju.
+*/
+#include<stdio.h>
+int main()
+{
+   int broj,kopija,suma=0,ost;
+   
+   printf("Unesi broj:");
+   scanf("%d",&broj);
+
+   /* Vrijednost varijable br ce se promjenit 
+   oa ju trebamo spremit u privremenu varijablu.
+   */
+   kopija = broj;
+
+
+   while (br != 0)
+   {
+      ost = broj % 10;
+      suma = suma + (ost*ost*ost);
+      broj = broj / 10;
+   }
+
+   if(kopija == suma)
+      printf("Suma kubova znamenki je jednaka broju %d",kopija);
+   else
+      printf("Suma kubova znamenki nije jednaka broju %d",kopija);
+   return(0);
+}
+
+/* Omogucili smo korisniku unos broja po zelji,kopije tog broja te ostatak i sumu dodali vrijednost 0(produktu se dodaje 1). 
+Vrijednost varijable broj ce se promijenit pa je moramo spremit u varijablu koju smo nazvali kopija te izvrsili sve radnje kako bi
+za uneseni broj suma kubova znamenki bila jednaka tom istom broju 
+*/
