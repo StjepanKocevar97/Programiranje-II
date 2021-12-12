@@ -1,0 +1,31 @@
+/*
+Omoguci korisniku unos godine te provjeriti je li godina koju unese prijestupna ili nije.
+*/
+#include <stdio.h>
+int main()
+{
+    int godina;
+    printf("Unesi godinu po zelji: ");
+    scanf("%d",&godina);
+    
+    if(godina % 4 == 0)
+    {
+        if( god % 100 == 0)
+        {
+            if ( god % 400 == 0)
+                printf("%d je prijestupna godina", godin);
+            else
+                printf("%d nije prijestupna godina", godina);
+        }
+        else
+            printf("%d je prijestupna godina", godina );
+    }
+    else
+        printf("%d nije prijestupna godina", godina);
+
+    return 0;
+}
+
+/*
+Omogucili smo unos godine te smo pomocu if naredbi i if else naredbi provjeravali da li je godina prijestupna ili nije 
+*/
