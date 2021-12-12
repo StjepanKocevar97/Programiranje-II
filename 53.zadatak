@@ -1,0 +1,30 @@
+/* 
+Omoguci korinsiku unos broja te pronaci ostatak pri dijeljenju tih brojeva.
+*/
+
+#include <stdio.h>
+
+int main()
+{
+   int broj1, broj2, dif, ost;
+
+   printf("Unesi broj: ");
+   scanf("%d", &broj1);
+
+   printf("Unesi broj s kojim dijelimo: ");
+   scanf("%d", &broj2);
+
+   dif = broj1 / broj2;
+   
+   ost = broj1 % broj2;
+
+   printf("Kolicnik je : %d\n", dif);
+   printf("Ostatak je: %d", ost);
+
+   return 0;
+}
+
+/*
+Omogucili smo korisniku unos 2 broja (broj1 i broj2) pomocu printf i scanf naredbi. Zatim smo unijeli operator 
+dif koji omogucava vracanje kolicnika tih 2 broja. Modulo % vraca ostatak pri dijeljenju 2 broja.
+*/
