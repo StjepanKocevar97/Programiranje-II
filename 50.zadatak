@@ -1,0 +1,23 @@
+/* 
+Omoguci korisniku unos broja te pronaci faktorijel tog broja.
+*/
+
+#include<stdio.h>
+
+int main()
+{
+  int k,faktorijel=1,br;
+  printf("Unesi broj po zelji: ");
+  scanf("%d",&br);
+
+  for(k=1; k+<=broj; k++)
+  { 
+      faktorijel=faktorijel*k;
+  }
+  printf("Faktorijel broja %d je: %d",br,faktorijel);
+  return 0;
+}
+
+/* 
+Omogucili smo korisniku unos broja , faktorijel postavili na vrijednost 1. For petljom racunamo faktorijel unesenog broja 
+*/
