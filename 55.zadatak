@@ -1,0 +1,31 @@
+/*
+Omoguci korisniku unos 2 broja te naci njihov prosjek preko funkcije.
+*/
+
+#include <stdio.h>
+
+float prosjek(int Broj1,int Broj2)
+{
+	float avg;
+	avg= (float)(Broj1+Broj2)/2;
+	return avg;
+
+}
+
+
+int main()
+{
+    int Broj1;
+    int Broj2;
+
+    printf("Unesi prvi broj: ");
+    scanf("%d",&Broj1);
+    printf("Unesi drugi broj: ");
+    scanf("%d",&Broj2);
+
+    float y=prosjek(Broj1,Broj2);
+
+    printf("Prosjek od %d i %d je: %.2f",Broj1,Broj2,y);
+
+    return 0;
+}
