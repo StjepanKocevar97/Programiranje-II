@@ -1,0 +1,29 @@
+/*
+Omoguci korisniku unos binarnog broja te ga zatim pretvori u decimalni.
+*/
+
+#include <stdio.h>
+#include <math.h>
+
+int BToD(long bin)
+{
+    int dec = 0, temp = 0, ost;
+    while (bin!=0)
+    {
+        ost = bin % 10;
+        bin = bin / 10;
+        dec = dec + ost*pow(2,temp);
+        temp++;
+    }
+    return dec;
+}
+
+int main()
+{
+    long bin;
+    printf("Unesi binarni broj: ");
+    scanf("%ld", &bin);
+
+    printf("Decimalni broj je: %d", BToD(bin));
+    return 0;
+}
