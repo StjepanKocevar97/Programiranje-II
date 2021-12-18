@@ -1,0 +1,20 @@
+/*
+Umoguci korisniku unos stranica trokuta te  izracunati povrsinu.
+*/
+
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+   int str;
+   float pov;
+   float temp_varijabla;
+
+   printf("\nUnesi duljinu stranice trokuta:");
+   scanf("%d",&str);
+
+   temp_varijabla = sqrt(3) / 4 ;
+   pov=temp_varijabla * str * str ;
+   printf("\nOpseg trokuta je: %f",pov);
+   return(0);
+}
