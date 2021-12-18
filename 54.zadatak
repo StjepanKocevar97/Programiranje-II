@@ -1,0 +1,51 @@
+/*
+Omoguci korisniku unos 3 broja te pronaci najveci od ta 3 pomocu pointera.
+*/
+
+#include <stdio.h>
+int main()
+{
+    int Broj1;
+    int Broj2;
+    int Broj3;
+    int *Pointer1;
+    int *Pointer2; 
+    int *Pointer3;
+
+    
+    printf("Unesi prvi broj: ");
+    scanf("%d",&Broj1);
+    printf("Unesi drugi broj: ");
+    scanf("%d",&Broj2);
+    printf("Unesi treci broj: ");
+    scanf("%d",&Broj3);
+
+    Pointer1 = &Broj1;
+    Pointer2 = &Broj2;
+    Pointer3 = &Broj3;
+    
+    if(*Pointer1 > *Pointer2)
+    {
+	if(*Pointer1 > *Pointer3)
+	{
+		printf("%d je najveci broj", *Pointer1);
+	}
+	else
+	{
+		printf("%d je najveci broj", *Pointer3);
+	}
+    }
+    else
+    {
+	if(*Pointer2 > *Pointer3)
+	
+	{
+		printf("%d je najveci broj", *Pointer2);
+	}
+	else
+	{
+		printf("%d je najveci broj", *Pointer3);
+	}
+    }
+    return 0;
+}
