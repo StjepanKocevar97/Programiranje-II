@@ -1,0 +1,24 @@
+/*
+Omoguci korisniku unos broja te njegov eksponent pomocu nardbe pow.
+*/
+
+#include<stdio.h>
+int main()
+{
+
+    int Broj, exponent, exp2;
+    long int rezultat = 1;
+
+    printf("Unesi broj i njegov ekponent:");
+    scanf("%d%d",&Broj, &exponent);
+
+    exp2 = exponent; 
+
+    while(exponent-- > 0)
+    {
+        rezultat *= br; 
+    }
+
+    printf("\n rjesenje je %d^%d = %ld", Broj, exp2, rezultat);
+    return 0;
+}
