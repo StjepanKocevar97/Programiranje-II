@@ -1,0 +1,20 @@
+/*
+Omoguci korisniku deklariranje i incijaliziranje polja znakova string te ispiste 7 puta na ekran.
+*/
+
+#include<stdio.h>
+
+int main() 
+{
+	char B[] = "Jesi li za poker?\n";
+	int k;
+	
+  for (k = 1; k <= 7; k++)
+		printf("%B", B);
+	
+  return 0;
+}
+
+/*
+Omogucili smo korisniku unos stringa s recenicom "Jesi li za poker?". Pomocu for petlji prolazimo kroz string te ispisujemo ga 7 puta.
+*/
