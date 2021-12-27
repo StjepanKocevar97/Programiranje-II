@@ -1,0 +1,34 @@
+
+/*
+Omoguci korisniku unos dva broja te njihovu zamjenu preko pointera.
+*/
+
+#include <stdio.h>
+
+void swap(int* a, int* b)
+{
+    int c;
+    c = *a;
+    *a = *b;
+    *b = c;
+}
+
+int main()
+{
+    int broj1, broj2;
+
+    printf("Unesite vrijednost prvog broja : ");
+    scanf_s("%d", &broj1);
+    printf("Unesite vrijednost prvog broja : ");
+    scanf_s("%d", &broj2);
+
+    swap(&broj1, &broj2);
+
+    printf("Zamijenjeni: broj1 je: %d, broj2 je: %d\n", broj1, broj2);
+
+    return 0;
+}
+/*
+Omogucujemo korisniku unos dva cijela broja te definiramo funkciju swap iz sluzbenog salabahtera. U main kodu
+moramo zamjenit dva broja. Nakon definiranje moramo opozvat funkciju swap kako bi program radio u cijelosti
+*/
