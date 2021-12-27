@@ -1,0 +1,52 @@
+/*
+Omoguci korisniku odredivanjeg najveceg unesenog broja pomocu pointera
+*/
+
+#include <stdio.h>
+
+int main()
+{
+    int broj1, broj2, broj3;
+    int* Point1, * Point2, * Point3;
+
+
+    printf("Unesite prvi broj: ");
+    scanf("%d", &broj1);
+    printf("Unesite drugi broj: ");
+    scanf("%d", &broj2);
+    printf("Unesite treci broj: ");
+    scanf("%d", &broj3);
+
+
+    Point1 = &broj1;
+    Point2 = &broj2;
+    Ponit3 = &broj3;
+    if (*Point1 > * Point2)
+    {
+        if (*Point1 > * Point3)
+        {
+            printf("%d je najveci broj", *Point1);
+        }
+        else
+        {
+            printf("%d je najveci broj", *Point3);
+        }
+    }
+    else
+    {
+        if (*Point2 > * Point3)
+        {
+            printf("%d je najveci broj", *Point2);
+        }
+        else
+        {
+            printf("%d je najveci broj", *Point3);
+        }
+    }
+    return 0;
+}
+
+/*
+Unosimo 3 broja koje kasnije u programu izjednacimo s pointerima Point1,Point2 i Point3 te if petljama
+odredujemo koji od njih najveci.
+*/
