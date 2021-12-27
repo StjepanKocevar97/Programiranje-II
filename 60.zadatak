@@ -1,0 +1,30 @@
+
+/*
+Omoguci korisniku unos recenice te da ju moze ispisat preko pointera.
+*/
+
+#include <stdio.h>
+
+int main()
+{
+    char String[100];
+    char* G;
+
+    printf("Unesite recenicu po zelji: ");
+    fgets(String, 100, stdin);
+
+
+    G = String;
+
+    printf("String je: ");
+
+    while (*G != '\0')
+        printf("%c", *G++);
+
+    return 0;
+}    
+*/
+Omogucujemo korisniku unos recenice. Pointer G izjednacimo sa stringom. Petljama provjeravamo da li su uneseni svi znakovi
+te pomocu funkcije printf stavljamo *G++ zbog toga sto nam pointer printa sve znakove do \0 koji je zadnji.
+ /*
+    
