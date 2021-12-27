@@ -1,0 +1,20 @@
+/*
+Omoguci korisniku deklariranje i incijaliziranje polja znakova string te ispiste 5 puta na ekran.
+*/
+
+#include<stdio.h>
+
+int main() 
+{
+	char A[] = "Moze Ples?\n";
+	int j;
+	
+  for (j = 1; j <= 5; j++)
+		printf("%A", A);
+	
+  return 0;
+}
+
+/*
+Omogucili smo korisniku unos stringa s recenicom "Moze ples?". Pomocu for petlji prolazimo kroz string te ispisujemo ga 5 puta.
+*/ 
