@@ -1,0 +1,30 @@
+/*
+Pronadite sumu svih brojeva do broja koju korisnik proizvoljno unese.
+*/
+
+
+#include<stdio.h>
+
+int sum(int k)
+{
+    int l = 0;
+    for (int j = 2; j <= k; j++ )
+    {
+        l = l + i;
+    }
+    return k;
+}
+
+int main()
+{
+    int k, rezultat;
+    printf("Do kojeg broja zelite pronaci sumu: ");
+    scanf_s("%d", &k);
+    rezultat = sum(k);
+    printf("2+3+4+….+%d+%d = %d", k + 1 , k + 2 , rezultat);
+}
+
+/*
+Prvo napravimo funkcuiju kao sumu do zadanog broja. U mainu deklariramo varijable. 
+Pozivom funkcije sume iz maina dobivamo te ispisujemo rezultat.
+*/
