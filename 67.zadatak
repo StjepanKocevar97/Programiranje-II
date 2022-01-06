@@ -1,0 +1,32 @@
+/*
+Pomocu funckije nadite najveci proizvoljan od ukupno 3 broja.
+*/
+
+#include<stdio.h>
+
+float najveci(float i, float j, float k)
+{
+	if (i >= j && i >= k) 
+		return i;
+	else if (j >= i && j >= k) 
+		return j;
+	else 
+		return k;
+}
+
+int main()
+{
+	float Broj1, Broj2, Broj3, Naj_Broj;
+
+	printf("Unesite proizvoljno 3 broja: ");
+	scanf_s("%f %f %f", &Broj1, &Broj2, &Broj3);
+
+	Naj_Broj = najveci (Broj1, Broj2, Broj3);
+	printf("Najveci od proizvoljnih brojeva je = %f", najveci);
+	return 0;
+}
+
+/*
+Prvo napravimo funckiju u kojoj promatramo koji je najveci broj od zadana 3 proizvoljna broja. U mainu omogucavamo 
+korisniku da unese proizvoljno 3 broja po zelji te pozivom funkcije usporedujemo 3 broja.
+*/ 
