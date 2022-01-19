@@ -1,0 +1,24 @@
+/*
+Napisite program koji prebacuje oktalne brojeve u decimalne.
+*/
+
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+
+int main()
+{
+    int okt, dec = 0, j = 0, b;
+    printf("Unesite oktalni broj: ");
+    scanf("%d", &okt);
+    while (okt != 0)
+    {
+        b = okt % 10;
+        dec = dec + (b * pow(8, j));
+        j++;
+        okt = okt / 10;
+    }
+    printf("\nDecimalna vrijednost je = %d", dec);
+    getch();
+    return 0;
+} 
