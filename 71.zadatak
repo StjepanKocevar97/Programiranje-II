@@ -1,0 +1,20 @@
+/*
+Napravite program koji prebacuje litre u decilitre
+*/
+
+#include<stdio.h>
+#include<conio.h>
+
+int main()
+{
+    float l, deci;
+    printf("Unesite Volumen po zelji u litrima: ");
+    scanf("%f", &Dek);
+    deci = l * 10;
+    printf("Volumen u decilitrima je = %0.2f", deci);
+    getch();
+    return 0;
+}
+/*
+U ovom jednostavnom programu racunamo koliki volumen u litrama uneseni sa tipkovnice pomocu funkcija printf i scanf imaju decilitara zaokruzene na dvije decimale.
+*/
