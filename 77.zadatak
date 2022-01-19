@@ -1,0 +1,27 @@
+/*
+Omoguci korisnik unos radijusa r te izracunaj volumen kugle.
+*/
+
+#include<stdio.h>
+#include<stdlib.h>
+#define pi 3.14
+
+float volumen(int r)
+{
+
+	float vol;
+	vol=(4.0/3.0)*PI*r*r*r;
+	return vol;
+}
+
+int main()
+{
+   float vol;
+   int r;
+   printf("Unesi radijus kugle po zelji:\n");
+   scanf("%d",&r);
+   float v=volumen(r);
+   printf("Volumen kugle je %f\n",v);
+   
+   return 0;
+}
