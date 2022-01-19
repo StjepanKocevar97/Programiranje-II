@@ -1,0 +1,20 @@
+/*
+Napravite program koji prebacuje kilograme u grame
+*/
+
+#include<stdio.h>
+#include<conio.h>
+
+int main()
+{
+    float Kg, gram;
+    printf("Unesite tezinu po zelji u kilogramima: ");
+    scanf("%f", &Kg);
+    gram = kg * 1000;
+    printf("Tezina u gramima je = %0.2f", gram);
+    getch();
+    return 0;
+}
+/*
+U ovom jednostavnom programu racunamo koliko kilogram uneseni sa tipkovnice pomocu funkcija printf i scanf imaju grama zaokruzene na dvije decimale.
+*/
