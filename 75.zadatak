@@ -1,0 +1,20 @@
+#include <stdio.h>
+/*
+Isprintajte sve vrijednosti hrvatske abecede na ekran.
+*/
+
+int main()
+{
+    int k;
+
+    for (k = 0; k <= 32; k++)
+    {
+        printf("Sve vrijednosti hrvatske abecede  %c = %d\n", k, k);
+    }
+
+    return 0;
+}
+/*
+Ovaj zadatak nam pokazuje kako prvo printamo vrijednosti hrvatske abecede. Pomocu for petlje svih 32 znakova
+stavimo da prolaze kroz imaginarno polje. Preko %c i %d izjednacimo da bismo dobili numericke vrijednosti svih 32 znaka i obratno.
+*/
