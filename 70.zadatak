@@ -1,0 +1,20 @@
+/*
+Napravite program koji prebacuje dekagrame u grame
+*/
+
+#include<stdio.h>
+#include<conio.h>
+
+int main()
+{
+    float Dek, gram;
+    printf("Unesite tezinu po zelji u Dekagramima: ");
+    scanf("%f", &Dek);
+    gram = Dek * 100;
+    printf("Tezina u gramima je = %0.2f", gram);
+    getch();
+    return 0;
+}
+/*
+U ovom jednostavnom programu racunamo koliko Dekagrama uneseni sa tipkovnice pomocu funkcija printf i scanf imaju grama zaokruzene na dvije decimale.
+*/
