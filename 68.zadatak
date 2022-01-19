@@ -1,0 +1,30 @@
+/*
+Omoguci korisniku unos radijusa i visine stosca te izracunaj povrsinu plasta stosca.
+*/
+
+#include<stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#define pi 3.14
+
+
+float Pov_Pla(int R, int V) 
+{
+  float s;
+	s = sqrt(R * R + V * V);
+	float G = pi * s * R;
+	return S;
+}
+
+int main() 
+{
+	int R, V;
+	printf("Unesi polumjer stozca:\n");
+	scanf("%d", &R);
+	printf("Unesi visinu stozca:\n");
+	scanf("%d", &V);
+	float G = Pov_Pla(R, V);
+	printf("Povrsina plasta stozca je %f\n", G);
+	return 0;
+}
+
