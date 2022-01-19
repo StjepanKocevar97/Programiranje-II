@@ -1,0 +1,20 @@
+/*
+Napravite program koji prebacuje litre u mililitre.
+*/
+
+#include<stdio.h>
+#include<conio.h>
+
+int main()
+{
+    float l, mil;
+    printf("Unesite Volumen po zelji u litrima: ");
+    scanf("%f", &l);
+    mil = l * 1000;
+    printf("Volumen u mililitrama je = %0.2f", mil);
+    getch();
+    return 0;
+}
+/*
+U ovom jednostavnom programu racunamo koliki volumen u litrama uneseni sa tipkovnice pomocu funkcija printf i scanf imaju mililitara zaokruzene na dvije decimale.
+*/
