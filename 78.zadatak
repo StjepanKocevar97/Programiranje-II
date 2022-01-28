@@ -1,0 +1,26 @@
+/* 
+Omoguci korisniku unos radijusa te broja pi i izracunaj povrsinu baze valjka 
+*/
+
+#include<stdio.h>
+#include<stdlib.h>
+#define PI 3.14
+
+int baza(int R)
+{
+	float baza;
+	baza=(float)PI*R*R;
+  return baza;
+}
+
+
+int main()
+{
+    int R;
+
+    printf("Unesi po zelji radijus\n");
+    scanf("%d",&R);
+    float B= baza(R);
+    printf("Baza valjka je: %.2f",B);
+    return 0;
+}
