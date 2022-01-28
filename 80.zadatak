@@ -1,0 +1,25 @@
+/* 
+Omoguci korisniku izradu programa koji broji sve parne i neparne brojeve unutar polja.
+*/
+
+#include<stdio.h>
+#include<conio.h>
+
+int main()
+{
+    int polje[20], Parni = 0, Neparni = 0, j;
+    printf("Unesite 20 brojeva: ");
+    for (j = 0; j < 20; j++)
+        scanf("%d", &polje[j]);
+    for (j = 0; j < 20; j++)
+    {
+        if (polje[j] % 2 == 0)
+            Parni++;
+        else
+            Neparni++;
+    }
+    printf("\nUkupan broj parnih brojeva je = %d", Parni);
+    printf("\nUkupan broj neparnih brojeva je = %d", Neparni);
+    getch();
+    return 0;
+} 
