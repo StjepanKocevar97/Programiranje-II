@@ -1,0 +1,26 @@
+/*
+Omogucite korisniku unos broja, svaki broj podijelite s vrijednoscu od 2 do 20 te napravite tablicu.
+*/
+
+#include <stdio.h>
+
+int main()
+{
+    int j;
+    int Broj;
+
+    printf("Unesite broj po zelji: ");
+    scanf("%d", &Broj);
+
+    for (j = 2; j <= 20; j++)
+    {
+
+        printf("%d / %d = %d\n", Broj, j, (Broj / j));
+    }
+
+    return 0;
+}
+
+/*
+Omogucili smo korisniku da unese broj po zelji te svaki uneseni broj smo podijelili s vrijednostima od 2 do 20 te napravili tablicu.
+*/
