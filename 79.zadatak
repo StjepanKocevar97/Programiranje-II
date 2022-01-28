@@ -1,0 +1,27 @@
+/*
+Omoguci korisniku unos radijusa,visine te definiraj pi, te izracunaj povrsinu plasta valjka
+*/
+
+#include<stdio.h>
+#include<stdlib.h>
+#define PI 3.14
+
+int Plast(int R, int v)
+{
+	float PovrsinaPlasta;
+	PovrsinaPlasta=(float)2*PI*R*v;
+  
+  return PovrsinaPlasta;
+}
+
+
+int main()
+{
+    int R;
+    int v;
+    printf("Unesi po zelji radijus i visinu\n");
+    scanf("%d %d",&R,&v);
+    float G= plast(R, v);
+    printf("Povrsina plasta valjka je: %.2f",G);
+    return 0;
+}
