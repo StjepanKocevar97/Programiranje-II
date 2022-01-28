@@ -1,0 +1,26 @@
+/*
+Omogucite korisniku unos broja, svaki broj pomnozite s vrijednoscu od 5 do 85 te napravite tablicu.
+*/
+
+#include <stdio.h>
+
+int main()
+{
+    int k;
+    int Broj;
+
+    printf("Unesite broj po zelji: ");
+    scanf("%d", &Broj);
+
+    for (k = 5; k <= 85; k++)
+    {
+
+        printf("%d / %d = %d\n", Broj, k, (Broj * k));
+    }
+
+    return 0;
+}
+
+/*
+Omogucili smo korisniku da unese broj po zelji te svaki uneseni broj smo pomnozili s vrijednostima od 2 do 20 te napravili tablicu.
+*/
