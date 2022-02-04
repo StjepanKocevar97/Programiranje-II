@@ -1,0 +1,21 @@
+/*
+Isprintajte sve ASCII vrijednosti na ekran.
+*/
+
+#include <stdio.h>  
+
+int main()
+{
+    int k;
+
+    for (k = 0; k <= 255; k++)
+    {
+        printf("ASCII vrijednost od  %c = %d\n", k, k);
+    }
+
+    return 0;
+}
+/*
+U ovom zadatku printamo sve ASCII vrijednosti svih znakova iz ASCII tablice. Posto ih ima 255 u for petlji stavljamo da 255 puta
+prolazi kroz imaginarno polje
+*/
