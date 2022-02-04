@@ -1,0 +1,24 @@
+/*Omogući korisniku unos realnog broja iz intervala [10,1000].  
+Potom, za svaki broj od 1 do n, u posebnom retku, ispisati na ekran isto toliko minusa (-).*/
+
+#include<stdio.h>
+
+int main() {
+  float x = 0;
+	float i;
+	float j;
+	do {
+		printf("Unesi broj iz intervala [10,100]: ");
+		scanf_s("%d", &a);
+	} while(!(x>=10 && x<=1000));
+
+	for ( i = 1; i <= x; i++)
+  {
+		for  (j = 1; j <= i; j++)
+    {
+			printf("-");
+		}
+		printf("\n");
+	}
+	return 0;
+}
