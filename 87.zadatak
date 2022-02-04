@@ -1,0 +1,25 @@
+/*
+Omogucite korisniku unos broja, svaki broj oduzmite s vrijednoscu od 1 do 30 te napravite tablicu.
+*/
+
+#include <stdio.h>
+
+int main()
+{
+    int k;
+    int Broj;
+
+    printf("Unesite broj: ");
+    scanf_s("%d", &Broj);
+
+    for (k = 1; k <= 30; k++)
+    {
+
+        printf("%d - %d = %d\n", broj, k, (broj - k));
+    }
+
+    return 0;
+}
+/*
+Omogucili smo korisniku da unese broj te svaki uneseni broj smo oduzeli s vrijednostima od 1 do 30 te napravili "tablicu".
+*/
