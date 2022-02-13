@@ -1,0 +1,28 @@
+/*
+Omoguci korisniku unos recenice od 80 znakova te da ju moze ispisat preko pointera.
+*/
+
+#include <stdio.h>
+
+int main()
+{
+    char String[80];
+    char* B;
+
+    printf("Unesite recenicu po vlastitoj zelji: ");
+    fgets(String, 80, stdin);
+
+
+    B = String;
+
+    printf("String je: ");
+
+    while (*B != '\0')
+        printf("%c", *B++);
+
+    return 0;
+}    
+*/
+Omogucujemo korisniku unos recenice. Pointer B izjednacimo sa stringom. Petljama provjeravamo da li su uneseni svi znakovi
+te pomocu funkcije printf stavljamo *B++ zbog toga sto nam pointer printa sve znakove do \0 koji je zadnji.
+ /*
