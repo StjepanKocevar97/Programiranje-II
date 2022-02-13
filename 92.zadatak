@@ -1,0 +1,20 @@
+/*
+Omoguci korisniku deklariranje i incijaliziranje polja znakova string te ispiste 8 puta na ekran.
+*/
+
+#include<stdio.h>
+
+int main() 
+{
+	char A[] = "Kako ide programiranje\n";
+	int k;
+
+  for (k = 1; k <= 8; k++)
+		printf("%A", A);
+
+  return 0;
+}
+
+/*
+Omogucili smo korisniku unos stringa s recenicom "Kako ide programiranje?". Pomocu for petlji prolazimo kroz string te ispisujemo ga 8 puta.
+*/ 
