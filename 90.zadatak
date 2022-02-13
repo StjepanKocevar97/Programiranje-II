@@ -1,0 +1,20 @@
+#include <stdio.h>
+/*
+Isprintajte sve vrijednosti slovenske abecede na ekran.
+*/
+
+int main()
+{
+    int s;
+
+    for (s = 0; s <= 25; s++)
+    {
+        printf("Sve vrijednosti slovenske abecede  %c = %d\n", s, s);
+    }
+
+    return 0;
+}
+/*
+Ovaj zadatak nam pokazuje kako prvo printamo vrijednosti engleske abecede. Pomocu for petlje svih 25 znakova
+stavimo da prolaze kroz imaginarno polje. Preko %c i %d izjednacimo da bismo dobili numericke vrijednosti svih 25 znaka i obratno.
+*/
