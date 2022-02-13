@@ -1,0 +1,29 @@
+/*
+Odredite kolike su velicine tipova podataka. Na ekran ispisite vrijednosti u byte.
+*/
+
+#include <stdio.h>
+
+int main()
+{
+    char D;
+    short E;
+    int F;
+    long G;
+    float H;
+    double I;
+
+
+    printf("Velicina od char: %ld bytes\n", sizeof(D));
+    printf("Velicina od short: %ld bytes\n", sizeof(E));
+
+    printf("Velicina od int: %ld bytes\n", sizeof(F));
+    printf("Velicina od long: %ld bytes\n", sizeof(G));
+
+    printf("Velicina od float: %ld bytes\n", sizeof(H));
+    printf("Velicina od double: %ld bytes\n", sizeof(I));
+
+
+
+    return 0;
+}
