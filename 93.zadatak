@@ -1,0 +1,21 @@
+/* 
+Omoguci korisniku za uneseni postontni broj pretvorit u normalni 
+*/
+
+#include<stdio.h>
+
+float postotak(float z)
+{
+	z=z/100;
+	return z;
+}
+
+int main()
+{
+	float z;
+	printf("Unesi broj u obliku postotka %%:");
+	scanf("%f",&z);
+	float NorBroj=postotak(z);
+	printf("Zadani broj u postotnom obliku je %.2f%% i u normalnom obliku  %.2f",z,NorBroj);
+	return 0;
+}
