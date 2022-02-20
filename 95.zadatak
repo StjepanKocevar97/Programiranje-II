@@ -1,0 +1,28 @@
+/* 
+Naredi da korisnik napravi program koji ce napravit fibonacijev trokut 
+*/
+
+#include<stdio.h>    
+#include<stdlib.h>  
+int main()
+{  
+   int f=0,g=1,i,h,k,j;    
+
+    printf("Unesi zadani limit:");    
+    scanf("%d",&k);    
+    for(i=1;i<=k;i++)    
+    {    
+        f=0;    
+        g=1;    
+        printf("%d\t",g);    
+        for(j=1;j<i;j++)    
+        {    
+            h=f+g;    
+            printf("%d\t",h);    
+            f=g;    
+            g=h;    
+
+        }    
+        printf("\n");    
+    }    
+return 0;  
