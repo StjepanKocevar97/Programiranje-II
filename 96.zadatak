@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+/*
+Omoguci korisniku unos realnog broja te provjeri je li dijeljiv s 3 ili nije dijeljiv s 3
+*/
+
+int main() 
+{
+	float Y;
+	printf("Unesite broj");
+	scanf("%f", &Y);
+	if (Y % 3 == 0) {
+		printf("%f dijeljiv s tri", Y);
+	}
+	else 
+  {
+		printf("%f nije dijeljiv s tri", Y);
+	}
+	return 0;
+}
+
+*/ 
+U ovom zadatku unosimo dva realna broja. Pomoću funkcije scanf unosimo 2 realna broja, if petljom provjevaramo da li je dijeljiv s 3. 
+If else petlja nam omogućuje ispis broja ako nije dijeljiv s tri.Pošto se radi o dijeljenju realnih brojeva koristi se "%2==0", odnosno
+dijeljenje s ostatkom.
+*/
