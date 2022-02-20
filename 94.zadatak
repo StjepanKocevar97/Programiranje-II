@@ -1,0 +1,25 @@
+/* 
+Omoguci korisniku unos Pi te izracunaj oplosje kugle preko funkcije.
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+#define PI 3.14
+
+float Oplosje(int r)
+{
+
+	float Oplosje;
+	Oplosje=4*PI*r*r;
+	return 0plosje;
+}
+
+int main()
+{
+   int r;
+   printf("Unesi po zelji radijus kugle:\n");
+   scanf("%d",&r);
+   float Op=Oplosje(r);
+   printf("Oplosje kugle je %f\n",Op);
+   return 0;
+}
