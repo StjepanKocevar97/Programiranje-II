@@ -1,0 +1,36 @@
+/*
+Učitajte i ispišite dvodimenzionalni niz - matrica nxn. Zatim ispišite članove niza koji nisu na glavnoj dijagonali. 
+Zamijenite elemente na glavnoj dijagonali praznim prilikom ispisa.
+*/
+
+#include <stdio.h>
+ 
+int main()
+{
+    printf("Unesite dimenzije kvadratne matrice:\n");
+    int i;
+    int j;
+    int n;
+    scanf("%d", &n);
+    int iMatrica[n][n];
+    printf("Unesite elemente matrice: \n");
+    for(i=0; i < n; i++) {
+        for(j=0; j < n; j++) {
+            scanf("%d", &iMatrica[i][j]);
+        }
+    }
+     
+    printf("\nIspis matrice:\n");
+    for(i=0; i < n; i++) {
+        for(j=0; j < n; j++) {
+            if(i==j) {
+                printf(" ");
+            }
+            else {
+                printf("%d ", iMatrica[i][j]);
+            }
+        }
+        printf("\n");
+    }
+    return 0;
+}
