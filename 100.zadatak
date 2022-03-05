@@ -1,0 +1,16 @@
+*/
+Omoguci korisniku unos kordinata i izračunajte udaljenost od ishodišta tih koordinata.
+*/ 
+
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+      float x1,y1,d;                             // deklariranje varijabli
+      printf("Ucitaj koordinate tocaka x1,y1 "); // ime varijable cija vrijednost se ucitava
+      scanf("%f %f", &x1, &y1);                  // ucitavanje vrijednosti koordinata sa tipkovnice
+       
+      d = sqrt((x1*x1) + (y1*y1));               // udaljenost od koordinatnog ishodista
+      printf("Udaljenost tocke M(%.2f,%.2f) od koordinatnog ishodista = %.2f", x1, y1, d); // ispis vrijednosti izraza
+      return 0;
+}
