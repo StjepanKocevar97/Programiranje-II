@@ -1,0 +1,24 @@
+/*
+Napišite program koji će izračunati vrijednost izraza za učitanu vrijednost N i ispisati:
+S = 4! + 8! + 12! +… + (4N)!
+*/
+
+#include <stdio.h>
+int main ()
+{
+    int i, n;
+    double s, p;        // vrijednost faktorijala brzo raste i prelazi raspon predviden za cijele brojeve
+    printf("Do broja n: ");
+    scanf("%d", &n);
+    s=0;
+    p=1;
+     
+    for(i=1; i <= (n*4); i++) {
+        p = p * i;          // faktorijel do broja i
+        if(i % 4 == 0)      // suma faktorijela djeljivih sa 3   
+            s = s + p;      // skraćena zapis s += p;        
+    }
+         
+   printf("Suma je: %f", s);
+   return 0;
+}
