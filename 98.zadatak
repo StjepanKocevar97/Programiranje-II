@@ -1,0 +1,16 @@
+/* 
+Napisati program za pretvaranje Kelvinovih stupnjeva u Celzijusove.
+*/
+
+#include <stdio.h>
+int main()
+{
+      float K,C;                           
+      printf("Temperatura u Kelvinima: "); // ime varijable cija vrijednost se ucitava
+      scanf("%f", &K);                     // ucitavanje vrijednosti varijable sa tipkovnice
+ 
+      C=K-273.15;                          // pretvaranje
+      printf("Temperatura u Celzijusima = %.1f", C);    // ispis vrijednosti
+      return 0;
+}
+ 
