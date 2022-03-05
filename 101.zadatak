@@ -1,0 +1,15 @@
+/*
+Napišite program koji pretvara temperaturu iz Celzijeve ljestvice u Fahrenheitovu termometarsku ljestvicu.
+*/
+
+#include<stdio.h>
+int main()
+{
+    float tc,tf;                                  // deklariranje varijable
+    printf("Ucitaj temperaturu u Celzijusima: "); // ime varijable cija vrijednost se ucitava
+    scanf("%f",&tc);                              // ucitavanje vrijednosti varijable sa tipkovnice
+    tf=tc*1.8+32;                                 // pretvaranje
+    printf("Temperatura napisana u Celzijusima = %.1f\n", tc); // ispis vrijednosti
+    printf("Temperatura napisana u Farenhajtima = %.1f", tf);  // ispis vrijednosti
+    return 0;
+}
