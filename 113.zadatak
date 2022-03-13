@@ -1,0 +1,25 @@
+/*
+Napisati rekurzivnu funkciju za ispis prvih n članova Fibonaccievog niza.
+*/
+
+#include <stdio.h>
+ 
+int fibonacci(int i) 
+{
+    if(i == 0) return 0;                    // i = 0
+    if(i == 1) return 1;                    // i = 1
+    return fibonacci(i-1) + fibonacci(i-2);
+}
+ 
+int  main()
+{
+    printf("Formiranje prvih n clanova Fibonaccievog niza . Rekurzija\n");
+    int i1, nClanova;
+ 
+    printf("Broj clanova niza: ");                              // ulazne vrijednosti
+    scanf("%d",&nClanova);
+ 
+    for (i1 = 0; i1 < nClanova; i1++)                           // prvih 13 clanova Fibonacci-jevog niza
+        printf("%d. clan je\t%d\n", i1, fibonacci(i1));         // ispis r.br. i clana niza
+    return 0;
+}
