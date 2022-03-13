@@ -1,0 +1,25 @@
+*/
+Napisati program sa rekurzijom za računanje faktorijela prvih n brojeva.
+*/
+
+int faktorijel(unsigned n) 
+{
+    if(n == 1)                      // ponavljanje do granicne vrijednosti ulazne varijable
+        return 1;                   // kraj rekurzije
+    return n * faktorijel(n -1);    // povratne vrijednost i poziv iste funkcije sa umanjenim n za 1
+}
+ 
+int main ()  
+{
+    printf("faktorijel prvih n brojeva . Rekurzija\n");
+    int broj, p;
+ 
+    printf("Broj: ");             // ulazne vrijednosti
+    scanf("%d",&broj);
+ 
+    p = faktorijel(broj);          // poziv funkcije faktorijel
+ 
+    printf("faktorijel brojeva od 1 do %d je %d", broj, p);     // ispis vrijednosti ulaznih i izlaznih varijabli
+    return 0;
+}
+ 
