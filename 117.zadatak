@@ -1,0 +1,28 @@
+/*
+Napravi funkciju koja prima trokut i racuna opseg tog trokuta.
+*/
+
+#include<stdio.h>
+#include<stdlib.h>
+
+float opseg(trokut trt) 
+{
+	float x, y, z;
+	x = len2D(trt.T1, trt.T3);
+	y = len2D(trt.T3, trt.T2);
+	z = len2D(trt.T2, trt.T1);
+
+	return x + y + z;
+}
+int main() 
+{
+	int trokut trt;
+	trt.T1.x = 1;
+	trt.T1.y = 1;
+	trt.T2.x = 2;
+	trt.T2.y = 2;
+	trt.T3.x = 3;
+	trt.T3.y = 3;
+	printf("%f", opseg(trt));
+
+}
