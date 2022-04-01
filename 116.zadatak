@@ -1,0 +1,28 @@
+/* 
+Napravi Strukturu za izracunavanje zbroja opsega kvadrata.
+*/
+
+#include<stdio.h>
+#include<stdlib.h>
+
+typedef struct kvadrat 
+{
+	float x;
+}
+kvadrat;
+
+float zbroj_opsega(kvadrat Kva1, kvadrat Kva2) 
+{
+	float Kv1a, Kv2b;
+	Kv1a = 4 * (Kva1.x);
+	Kv2b = 4 * (Kva2.x);
+	return Kv1a + Kv2b;
+
+}
+int main() 
+{
+	kvadrat Kva1, Kva2;
+	Kv1a.x = 10, 5;
+	Kv2b.x = 20, 4;
+	return 0;
+} 
