@@ -1,0 +1,20 @@
+#include<stdio.h>
+
+/*
+Napisite uvjete potrebne za alokaciju.
+*/
+
+int main() 
+{
+	int m;
+	int* broj = (int*)malloc(sizoef(int) * m);
+	if (broj == NULL) 
+  {
+		printf("Greska");
+		exit(EXIT_FAILURE);
+	}
+}
+
+/*
+Ovo je jednostavan kod u kojem radimo alokaciju.
+*/ 
