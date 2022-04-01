@@ -1,0 +1,28 @@
+ /*
+ Napisi strukturu matrice koja mora sadrzavati m i n broj redaka i stupaca te polje pokazivaca na float pod imenom podaci.
+ */
+
+#include<stdio.h>
+#include<stdlib.h>
+
+
+typedef struct matrica 
+{
+	int m;
+	int n;
+	float** podaci;
+}
+matrica;
+
+float** alokacija2D(int g, int e) 
+{
+	matrica* M = (matrica*)malloc(sizeof(matrica));
+	M->m = g;
+	M->n = e;
+	M->podaci = (float**)malloc(sizeof(float*) * g);
+	int i;
+	for (i = 0; i < g; i++) 
+  {
+		M->podaci[i] = (float*)malloc(sizeof(float) * e);
+	}
+} 
