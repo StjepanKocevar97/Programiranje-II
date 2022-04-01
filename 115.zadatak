@@ -1,0 +1,40 @@
+/*
+Napravite dvije strukture u kojoj ce jedna struktura primati komponente tocke dok ce druga struktura primati komponente trokuta.
+U mainu unesite koordinate za trokut 
+*/
+
+#include<stdio.h>
+#include<stdlib.h>
+
+
+typedef struct tocka 
+{
+	float x;
+	float y;
+}
+
+tocka;
+
+typedef struct trokut 
+{
+	tocka T1;
+	tocka T2;
+	tocka T3;
+}
+trokut;
+
+int main() {
+	trokut tr;
+	tr.T1.x = 3;
+	tr.T1.y = 4;
+	tr.T2.x = 2;
+	tr.T2.y = 1;
+	tr.T3.x = 6;
+	tr.T3.y = 7;
+};
+
+/*
+U ovom zadatku smo pokazali kako napraviti dvije strukture tocka i trokut. Prvo napravimo strukturu tocka zato sto moramo 
+za strukturu trokut koristiti komponente iz strukture tocka. tr.T1.x sluzi kao x komponenta u ravnini, 
+dok tr.t1.y sluzi za y komponentu u ravnini.
+*/ 
