@@ -1,0 +1,26 @@
+/*
+Napisi funkciju koja prima polje i svaki element tog polja mora pomnoziti brojem 4.
+*/
+
+#include<stdio.h>
+#include<stdlib.h>
+
+void funk(int* polje, int g) 
+{
+	int j;
+	for (j = 0; j < g; j++) 
+  {
+		polje[j] *= 4;
+	}
+}
+
+int main() 
+{
+	int polje[4] = { 1,2,3,4 }, j, g;
+	funk(polje, 4);
+	for (j = 0; j < g; j++) 
+  {
+		printf("%d", polje[j]);
+	}
+	return 0;
+} 
