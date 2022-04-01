@@ -1,0 +1,16 @@
+/*
+Koristenje pomocu pointera.
+*/
+
+#include<stdio.h> 
+
+int main() 
+{
+	int* s;
+	int b = 8;
+	s = &b;
+	printf("%d", b);   //ispisuje 8
+	printf("%p", &b);  //ispisuje adresu od b
+	printf("%p", s);  //ispisuje adresu od b
+	printf("%d", *s); //ispisuje adresu od 8
+} 
