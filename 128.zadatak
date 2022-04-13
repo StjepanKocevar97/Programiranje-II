@@ -1,0 +1,84 @@
+/*
+Omoguci korisniku unos i ispis 2 proizvoljne matrice.
+*/
+#include <stdio.h>
+
+int main()
+{
+    int C[10][10],D[10][10],E[10][10],i,j,X,Y;
+    int redak, stupac;
+
+    printf("Unesi broj redaka : ");
+        scanf("%d", &X);
+        printf("\nUnesi broj stupaca : ");
+        scanf("%d",&Y);
+
+        printf("\nUnesi vrijednosti matriuce a: \n");
+        for (i = 0; i < X; i++)
+        {
+            for (j = 0; j < Y; j++)
+            {
+                 printf("\nUnesi a[%d][%d] vrijednost : ",i,j);
+                 scanf("%d", &C[i][j]);
+        }
+    }
+
+    printf("\nMatrica C je: \n\n");
+
+        for (i = 0; i < X; ++i)
+        {
+            for (j = 0; j < Y; ++j)
+            {
+                printf("\t%d", C[i][j]);
+            }
+            printf("\n\n");
+        }
+
+    printf("\nUnesi vrijednost matrice D : \n");
+        for (i = 0; i < X; i++)
+        {
+            for (j = 0; j < Y; j++)
+            {
+                 printf("\nUnesi b[%d][%d] vrijednost: ",i,j);
+                 scanf("%d", &D[i][j]);
+        }
+    }
+
+    printf("\nMatrica D je : \n\n");
+
+        for (i = 0; i < X; ++i)
+        {
+            for (j = 0; j < Y; ++j)
+            {
+                printf("\t%d", D[i][j]);
+            }
+            printf("\n\n");
+        }
+    /*
+     * Oduzima 2 matrice.
+     */
+    for(redak=0; redak<m; redak++)
+    {
+        for(stupac=0; stupac<n; stupac++)
+        {
+            E[redak][stupac] = C[redak][stupac] - D[redak][stupac];
+        }
+    }
+
+    /*
+     * Ispis razlike
+     */
+    printf("\nRazlika 2 matrice je C - D = E \n");
+    printf("\nmatrica E je: \n\n");
+
+        for (i = 0; i < X; ++i)
+        {
+            for (j = 0; j < Y; ++j)
+            {
+                printf("\t%d", E[i][j]);
+            }
+            printf("\n\n");
+        }
+
+    return 0;
+}
