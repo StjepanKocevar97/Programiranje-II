@@ -1,0 +1,60 @@
+/*
+Omoguci korisniku unos 2 matrice i ispisat njihov umnozak.
+*/
+
+#include <stdio.h>
+
+int main()
+{
+  int x, y, z, g, i, j, k, suma = 0;
+  int prva[21][21], druga[21][21], konacna[21][21];
+
+  printf("Unesi broj redaka i stupaca prve matrice\n");
+  scanf("%d %d", &x, &y);
+  printf("Unesi elemente 2 matrice\n");
+
+  for (i = 0; i < x; i++)
+    for (j = 0; j < y; j++)
+      scanf("%d", &prva[i][j]);
+
+  printf("Unesi broj redaka i stupaca druge matrice\n");
+  scanf("%d %d", &z, &q);
+
+  if (n != z)
+    printf("Mnozenje nije moguce.\n");
+  else
+  {
+    printf("Unesi elemente druge matrice\n");
+
+    for (i = 0; i < z; i++)
+      for (j = 0; j < g; j++)
+        scanf("%d", &druga[i][j]);
+
+    for (i = 0; i < x; i++) 
+    {
+      for (j = 0; j < g; j++) 
+      {
+        for (k = 0; k < z; k++) 
+        {
+          suma = suma + prva[i][k]*druga[k][j];
+        }
+
+        konacna[i][j] = suma;
+        suma = 0;
+      }
+    }
+
+    printf("Produkt mnozenja je:\n");
+
+    for (i = 0; i < x; i++) 
+    {
+      for (j = 0; j < g; j++)
+      
+        printf("%d\t", konacna[i][j]);
+
+      printf("\n");
+    }
+  }
+
+  return 0;
+}
