@@ -1,0 +1,37 @@
+/*
+Omoguci korisniku unos i ispis brojeva dijeljive s 3 u matrici proizvoljne velicine.
+*/
+
+#include<stdio.h>
+int main()
+
+{
+	int i,j;
+	int x,y;
+	int M[70][70];
+	printf("Unesi broj redaka i stupaca:");
+	scanf("%d %d",&m,&n);
+	printf("Unesi elemnete matrice:\n");
+for(i=0;i<x;i++)
+{    
+for(j=0;j<y;j++)    
+{    
+	scanf("%d",&M[i][j]);    
+}    
+}   
+
+for(i=0;i<x;i++){
+
+for(j=0;j<y;j++){
+
+	if(M[i][j]%3 == 0){
+
+		printf("%d ",M[i][j]);
+}
+
+}
+	printf("\n");
+}
+
+return 0;
+}
