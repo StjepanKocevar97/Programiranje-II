@@ -1,0 +1,59 @@
+#include <stdio.h>
+
+int main()
+{
+    int G[20][20],i,j,X,Y;
+    int redak, stupac, donja;
+
+    printf("Unesi broj redaka: ");
+        scanf("%d", &X);
+        printf("\nUnesi broj stupaca: ");
+        scanf("%d",&Y);
+        printf("\nUnesi vrijednosti matrice: \n");
+        for (i = 0; i < X; i++)
+        {
+            for (j = 0; j < Y; j++)
+            {
+                 printf("\nUnesi vrijednost G[%d][%d] : ",i,j);
+                 scanf("%d", &G[i][j]);
+        }
+    }
+
+    donja = 1;
+    for(redak=0; redak<Y; redak++)
+    {
+        for(stupac=0; stupac<X; stupac++)
+        {
+            
+            if(stupac>redak && G[redak][stupac]!=0)
+            {
+                donja = 0;
+            }
+        }
+    }
+
+    if(donja == 1)
+    {
+        printf("\nMatrica je donje trokutasta: \n\n");
+
+     
+        for(redak=0; redak<Y; redak++)
+        {
+            for(stupac=0; stupac<n; stupac++)
+            {
+                if(G[redak][stupac]!=0)
+                {
+                    printf("\t%d", G[redak][stupac]);
+                }
+            }
+
+            printf("\n\n");
+        }
+    }
+    else
+    {
+        printf("\nMatrica nije donje trokutasta");
+    }
+
+    return 0;
+}
