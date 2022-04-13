@@ -1,0 +1,39 @@
+/*
+Omoguci korisniku upis i pronalazak parnih elemenata matrice velicine koju on odabere.
+*/
+
+#include<stdio.h>
+int main()
+
+{
+	int i,j;
+	int x,y;
+	int M[35][35];
+	printf("Unesi broj redaka i stupaca:");
+	scanf("%d %d",&x,&y);
+	printf("Unesi elemnete matrice:\n");
+for(i=0;i<x;i++)
+{    
+for(j=0;j<y;j++)    
+{    
+	scanf("%d",&M[i][j]);    
+}    
+}   
+
+for(i=0;i<x;i++)
+{
+
+for(j=0;j<y;j++)
+{
+
+if(M[i][j]%2 == 0)
+{
+
+	printf("%d ",M[i][j]);
+}
+}
+	printf("\n");
+}
+
+return 0;
+}
