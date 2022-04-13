@@ -1,0 +1,61 @@
+/*
+Omoguci korisniku unos skalara koji ce bit pomnozen sa proizvoljnom 2D matricom.
+*/
+
+#include <stdio.h>
+
+int main()
+{
+    int D[20][20],i,j,x,y;
+    int row, col, broj;
+    int broj;
+
+    printf("Unesi broj redaka: ");
+        scanf("%d", &x);
+        printf("\nUnesi broj stupaca: ");
+        scanf("%d",&y);
+        printf("\nUnesi elemente matrice: \n");
+        for (i = 0; i < x; i++)
+        {
+            for (j = 0; j < y; j++)
+            {
+                 printf("\nUnesi D[%d][%d] : ",i,j);
+                 scanf("%d", &D[i][j]);
+        }
+    }
+    printf("\nDana matrica je: \n\n");
+        for (i = 0; i < x; ++i)
+        {
+            for (j = 0; j < y; ++j)
+            {
+                printf("\t%d", D[i][j]);
+            }
+            printf("\n\n");
+        }
+    
+    /* Ucitaj broj s kojim je pomnozena matrica */
+    
+    printf("\nUnesi skalar: ");
+    scanf("%d", &broj);
+    /* Mnozenje sa skalarom */
+    for(i=0; i<x; i++)
+    {
+        for(j=0; j<y; j++)
+        {
+            D[i][j] = broj * D[i][j];
+        }
+    }
+    
+    /* Ispis ispravnog rezultata mnozenja */
+    
+    printf("\nKonacan rezultat je = \n\n");
+    for (i = 0; i < x; ++i)
+        {
+            for (j = 0; j < y; ++j)
+            {
+                printf("\t%d", D[i][j]);
+            }
+            printf("\n\n");
+        }
+    return 0;
+}
