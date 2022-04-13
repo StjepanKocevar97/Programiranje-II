@@ -1,0 +1,47 @@
+/*
+Omoguci korisniku unos matrice te izracunat sumu dijagonalnih elemenata na 2D matrici.
+*/
+#include <stdio.h>
+
+int main()
+{
+    int F[30][30],i,j,X,Y;
+    int sum = 0;
+
+    printf("Unesi broj redaka: ");
+        scanf("%d", &X);
+        printf("\nUnesi broj stuipaca: ");
+        scanf("%d",&Y);
+        printf("\nUnesi elemente matrice: \n");
+        for (i = 0; i < X; i++)
+        {
+            for (j = 0; j < Y; j++)
+            {
+                 printf("\nUnesi vrijednost F[%d][%d] : ",i,j);
+                 scanf("%d", &F[i][j]);
+        }
+    }
+
+    printf("\nDana matrica je: \n\n");
+
+        for (i = 0; i < X; ++i)
+        {
+            for (j = 0; j < Y; ++j)
+            {
+                printf("\t%d", F[i][j]);
+            }
+            printf("\n\n");
+        }
+
+    /*
+     Pronade sumu dijagonalnih elemenata.
+     */
+    for(i=0; i<X; i++)
+    {
+        sum = sum + F[i][i];
+    }
+
+    printf("\nSuma glavne dijagonale je = %d\n\n", sum);
+
+    return 0;
+}
