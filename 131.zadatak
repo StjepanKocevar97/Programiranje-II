@@ -1,0 +1,49 @@
+/*
+Omoguci korisniku unos matrice te ispis sume elemenata suprotne dijagonale.
+*/
+
+#include <stdio.h>
+
+int main()
+{
+    int D[10][10],i,j,X,Y;
+    int sum = 0;
+
+    printf("Unesi broj redova: ");
+        scanf("%d", &X);
+        printf("\nUnesi broj stupaca: ");
+        scanf("%d",&Y);
+        printf("\nunesi vrijednosti matrice: \n");
+        for (i = 0; i < X; i++)
+        {
+            for (j = 0; j < Y; j++)
+            {
+                 printf("\nUnesi vrijednost D[%d][%d]: ",i,j);
+                 scanf("%d", &D[i][j]);
+        }
+    }
+
+    printf("\nDana matrica je: \n\n");
+
+        for (i = 0; i < X; ++i)
+        {
+            for (j = 0; j < Y; ++j)
+            {
+                printf("\t%d", D[i][j]);
+            }
+            printf("\n\n");
+        }
+
+    /*
+      Racuna sumu elemenata suprotne dijagonale.
+	  */
+        for (i = 0; i < X; ++i)
+        {
+             sum = sum + D[i][Y - i - 1];
+        }
+
+
+    printf("\nSuma elemenata suprotne dijagonale je = %d", sum);
+
+    return 0;
+}
