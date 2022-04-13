@@ -1,0 +1,33 @@
+/* 
+Omoguci korisniku pronalazak i ispis neparne elemente matrice 
+*/
+
+#include<stdio.h>
+
+int main()
+
+{
+	int i,j;
+	int m[4][4];
+	printf("Unesi elemnete matrice:\n");
+for(i=0;i<4;i++)
+{    
+for(j=0;j<4;j++)    
+{    
+	scanf("%d",&m[4][4]);    
+}    
+}   
+for(i=0;i<4;i++)
+{
+for(j=0;j<4;j++)
+{
+//Uvjet za trazenje neparnog broja.
+if(m[i][j]%2 != 0)
+{
+	printf("%d ",m[i][j]);
+}
+}
+	printf("\n");
+}
+return 0;
+}
