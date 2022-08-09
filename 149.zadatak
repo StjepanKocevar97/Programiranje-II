@@ -1,0 +1,13 @@
+Napiši programski kod provjerava da li je y veći od x, z veći od y za zadana tri integera x,y,z
+
+#include <stdio.h>
+#include <stdlib.h>
+int main(void){
+printf("%d",test(1, 2, 3));
+printf("\n%d",test(4, 5, 6));
+printf("\n%d",test(-1, 1, 0));
+}
+int test(int x, int y, int z)
+{
+return x < y && y < z;
+}
