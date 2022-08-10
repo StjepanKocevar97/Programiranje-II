@@ -1,0 +1,20 @@
+Deklarirati polje od 20 realnih brojeva te omoguciti korisniku njegovo popunjavanje.
+Izracunati i ispisati na ekran zbroj onih elemenata polja cija je vrijednost veca od 2 te
+manja od 6. Koristiti pokazivacku notaciju za pristup elementima polja
+
+#include <stdio.h>
+#define M 20
+#define DG 2
+#define GG 6
+int main(void)
+{
+float a[M], zbroj = 0;
+int i;
+for (i = 0; i < M; i++)
+scanf("%f", a + i);
+for (i = 0; i < M; i++)
+if (*(a + i) > DG && *(a + i) < GG)
+zbroj += *(a + i);
+printf("Zbroj je: %f", zbroj );
+return 0;
+}
