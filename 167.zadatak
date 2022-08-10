@@ -1,0 +1,38 @@
+Napisati funkciju koja ce provjeriti postoji li dani string unutar drugog danog stringa. 
+Na primjeru u funkciji main() pokazati uporabu napisane funkcije.
+
+#include <stdio.h>
+int podstring (const char t[], const char s[]);
+int brznak(const char s[]); // pomocna funkcija za odredjivanje broja znakova danog stringa
+int main(void)
+{
+char a[] = " Programiranje 1 - laboratorijske vjezbe";
+char b[] = "bor";
+int o = podstring (a, b);
+printf("Trazeni string %sostoji.", o == 1 ? "p" : "ne p");
+return 0;
+}
+int podstring (const char s[], const char t[])
+{
+int p;
+int dt , ds;
+int i, j;
+dt = brznak(t);
+ds = brznak(s);
+for (i = 0; i < ds - dt + 1; i++) {
+p = 1;
+for (j = 0; j < dt; j++)
+if (s[i + j] != t[j]) {
+p = 0;
+break;
+}
+if (p == 1)
+break;
+}
+return p;
+}
+int brznak(const char s[])
+{
+int br = 0;
+while (*s++ != ’\0’) ;
+return br; }
