@@ -1,0 +1,19 @@
+Napisati funkciju koja ce na ekran ispisati sve parne brojeve izmedu 2 i n. Na primjeru
+u funkciji main() pokazati uporabu napisane funkcije
+
+#include <stdio.h>
+void parni(int n);
+int main(void)
+{
+int a = 100;
+parni(a);
+printf("\n");
+parni (50);
+return 0;
+}
+void parni(int n)
+{
+int i;
+for (i = 2; i <= n; i += 2)
+printf("%d ", i);
+}
