@@ -1,0 +1,22 @@
+Napisati funkciju koja ´ce vratiti broj elemenata predanog joj polja cijelih brojeva koji imaju parne vrijednosti. 
+Na primjeru u funkciji main() pokazati uporabu napisane funkcije.
+
+#include <stdio.h>
+int parnielem (const int a[], int n);
+int main(void)
+{
+int ia[] = {2, 3, 6, 9, 4, 5, 6, 3, 9, 1, 0, 7};
+int brparni , v;
+v = sizeof (ia) / sizeof (int);
+brparni = parnielem (ia , v);
+printf("Broj parnih elemenata u polju je: %d\n", brparni );
+return 0;
+}
+int parnielem (const int a[], int n)
+{
+int i, br = 0;
+for (i = 0; i < n; i++)
+if (a[i] % 2 == 0 && a[i] != 0)
+br ++;
+return br;
+}
