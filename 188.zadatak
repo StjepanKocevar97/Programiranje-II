@@ -1,0 +1,31 @@
+Napiši program koji precrtava jedno polje elemenata u drugi
+
+#include <stdio.h>
+#define MAX_SIZE 100
+int main()
+{
+int first[MAX_SIZE], second[MAX_SIZE];
+int i, num;
+printf("Enter the size of the array : ");
+scanf("%d", &num);
+printf("Enter elements of first array : ");
+for(i=0; i<num; i++)
+{
+scanf("%d", &first[i]);
+}
+for(i=0; i<num; i++)
+{
+second[i] = first[i];
+}
+printf("\nElements of first array are: \n");
+for(i=0; i<num; i++)
+{
+printf("%d\t", first[i]);
+}
+printf("\nElements of second array are: \n ");
+for(i=0; i<num; i++)
+{
+printf("%d\t", second[i]);
+}
+return 0;
+}
