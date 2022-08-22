@@ -1,0 +1,12 @@
+Deklarirati i inicijalizirati dva razlicita polja, razlicitih velicina i tipova podataka te ih ispisati na ekran.
+
+#include <stdio.h>
+#define N 5
+int i;
+int ip[N] = {2, 4, 6, 8, 10};
+float fp[M] = {1.1, 2.2, 3.3};
+for (i = 0; i < N; i++)
+printf(" %d " , ip[i]);
+for (i = 0; i < M; i++)
+printf(" %f " , fp[i]);
+}
