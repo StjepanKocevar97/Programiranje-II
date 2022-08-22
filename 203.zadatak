@@ -1,0 +1,22 @@
+Napisati funkciju koja ce provjeriti je li dani nenegativni cijeli broj prost te vratiti 1 u slucaju da jest, a u suprotnom
+vratiti 0. Na primjeru u funkciji main() pokazati uporabu napisane funkcije.
+
+#include <stdio.h> 
+int prost(unsigned int); 
+//izostavljen je naziv
+
+int main(void)
+{
+unsigned int a[5] = {13, 45, 17, 31, 123};
+parametra u prototipu f-je
+int i; if (prost(a[i])) printf(" Broj %u je prost\n" , a[i]);
+for (i = 0; i < 5; i++)
+{
+}
+int prost(unsigned int n)
+{
+unsigned int i; if (n < 2) return -1;
+for (i = 2; i < n; i++)
+if (n % i == 0) return 0;
+return 1;
+}
