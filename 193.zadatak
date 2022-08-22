@@ -1,0 +1,35 @@
+Generirati pseudo-slucajni cijeli broj iz [0, 1000] koji predstavlja traženi. Nakon toga, 250 puta generirati pseudoslucajni 
+cijeli broj iz [100, 500] koji predstavlja velicinu polja i dinamicki zauzeti memoriju za polje generirane velicine. Potom
+ga popuniti pseudo-slucajnim brojevima iz [0, 1000]. Svaki puta provjeriti nalazi li se traženi broj u polju. Ispisati na ekran
+prosjecnu velicinu polja i koliko je ukupno puta bio pronaden traženi broj.
+#include <stdlib.h> 
+#include <stdio.h>
+#include <time.h>
+#define P_DG 100
+
+int main(void)
+{
+int n, i, tr;
+int uvel = 0, up = 0;
+int *p, *r;
+srand((unsigned)time(NULL)); r = NULL;
+for (i = 0; i < M; i++)
+{
+n = rand_i(P_DG, P_GG);
+p = (int *)realloc(r, n * sizeof(int));
+if (p == NULL) return 1;
+popuni(p, n, T_DG, T_GG);
+up += trazi(p, n, tr);
+} 
+free(p);
+}
+int i;
+for (i = 0; i < n; i++)
+if (a[i] == t)
+return 1;
+return 0; }
+return dg + rand() % (gg - dg + 1); }
+int i;
+for (i = 0; i < n; i++)
+a[i] = rand_i(dg, gg);
+}
