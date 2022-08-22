@@ -1,0 +1,24 @@
+Napisati funkciju koja odreduje i vraca broj iz intervala [a,b] ⊂ N koji ima najviše dijelitelja. 
+Na primjeru u funkciji main() pokazati uporabu napisane funkcije.
+
+#include <stdio.h> 
+int mostDivsibleIn(int a, int b); 
+int divCount(int num); 
+int main(void) {
+int r;
+r = mostDivsibleIn(1, 12345);
+printf(" %d\n" , r);
+return 0; } int mostDivsibleIn(int a, int b) {
+int max, i, num;
+num = a;
+max = divCount(a); if (divCount(i) > max) { max = divCount(i); } }
+return num;
+for (i = a + 1; i <= b; i++) {
+num = i;
+} int divCount(int num) { int i, dc;
+dc = 0;
+for (i = 1; i <= num; i++) {
+if (num % i == 0) {
+dc++;
+} } return dc;
+}
