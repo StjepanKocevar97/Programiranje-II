@@ -1,0 +1,17 @@
+Dinamicki zauzeti memoriju za 26 podatka tipa char (polje znakova velicine 26 elemenata).
+Dobiveno polje popuniti slovima A do Z te ga ispisati na ekran.
+
+
+#include <stdio.h>
+#include <stdlib.h> 
+//malloc(), free()
+
+int main(void)
+{
+char i; char *s;
+for (i = 0; i < 26; i++)
+s[i] = ’A’ + i;
+for (i = 0; i < 26; i++)
+printf(" %c\n" , s[i]);
+free(s);
+}
